@@ -123,7 +123,7 @@ function loadApp() {
 		gradients: true,
 		autoCenter: true,
 		duration: 1000,
-		pages: 30,
+		pages: 13,
 		when: {
 
 		turning: function(e, page, view) {
@@ -222,8 +222,8 @@ $('#canvas').css({visibility: 'hidden'});
 
 yepnope({
 	test: Modernizr.csstransforms,
-	yep: ['js/turnjs/lib/turn.min.js', '../css/jquery.ui.css'],
-	nope: ['js/turnjs/lib/turn.html4.min.js', '../css/jquery.ui.html4.css'],
+	yep: ['js/turnjs/lib/turn.js', '../css/jquery.ui.css'],
+	nope: ['js/turnjs/lib/turn.html4.js', '../css/jquery.ui.html4.css'],
 	both: ['../css/docs.css', 'js/docs.js'],
 	complete: loadApp
 });
