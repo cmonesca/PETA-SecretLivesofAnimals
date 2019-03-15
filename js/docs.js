@@ -4,9 +4,9 @@ function loadPage(page) {
 
 	var img = $('<img />');
 	img.load(function() {
-		var container = $('.sample-docs .p'+page);
+		var container = $('.peta-book .p'+page);
 		img.css({width: container.width(), height: container.height()});
-		img.appendTo($('.sample-docs .p'+page));
+		img.appendTo($('.peta-book .p'+page));
 		container.find('.loader').remove();
 	});
 
@@ -33,7 +33,7 @@ function updateTabs() {
 	var tabs = {7: 'Clases', 12:'Constructor', 14:'Properties', 16:'Methods', 23:'Events'},
 		left = [],
 		right = [],
-		book = $('.sample-docs'),
+		book = $('.peta-book'),
 		actualPage = book.turn('page'),
 		view = book.turn('view');
 
@@ -53,8 +53,8 @@ function updateTabs() {
 
 	}
 
-	$('.sample-docs .tabs .left').html(left.join(''));
-	$('.sample-docs .tabs .right').html(right.join(''));
+	$('.peta-book .tabs .left').html(left.join(''));
+	$('.peta-book .tabs .right').html(right.join(''));
 
 }
 

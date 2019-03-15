@@ -1,6 +1,6 @@
 function loadApp() {
 
-	var flipbook = $('.sample-docs');
+	var flipbook = $('.peta-book');
 
 	// Check if the CSS was already loaded
 
@@ -15,7 +15,7 @@ function loadApp() {
 
 		var data = $(this).data(),
 			step = 30,
-			flipbook = $('.sample-docs'),
+			flipbook = $('.peta-book'),
 			actualPos = $('#slider').slider('value')*step;
 
 		if (typeof(data.scrollX)==='undefined') {
@@ -70,7 +70,7 @@ function loadApp() {
 			if (window._thumbPreview)
 				_thumbPreview.removeClass('show');
 
-			$('.sample-docs').turn('page', Math.max(1, $(this).slider('value')*2 - 2));
+			$('.peta-book').turn('page', Math.max(1, $(this).slider('value')*2 - 2));
 		}
 	});
 
@@ -82,15 +82,15 @@ function loadApp() {
 			var page = parts[1];
 
 			if (page!==undefined) {
-				if ($('.sample-docs').turn('is'))
-					$('.sample-docs').turn('page', page);
+				if ($('.peta-book').turn('is'))
+					$('.peta-book').turn('page', page);
 			}
 
 		},
 		nop: function(path) {
 
-			if ($('.sample-docs').turn('is'))
-				$('.sample-docs').turn('page', 1);
+			if ($('.peta-book').turn('is'))
+				$('.peta-book').turn('page', 1);
 		}
 	});
 
@@ -103,12 +103,12 @@ function loadApp() {
 		switch (e.keyCode) {
 			case previous:
 
-				$('.sample-docs').turn('previous');
+				$('.peta-book').turn('previous');
 
 			break;
 			case next:
 
-				$('.sample-docs').turn('next');
+				$('.peta-book').turn('next');
 
 			break;
 		}
@@ -157,7 +157,7 @@ function loadApp() {
 			Hash.go('page/'+page).update();
 
 			if (page==1 || page==pages)
-				$('.sample-docs .tabs').hide();
+				$('.peta-book .tabs').hide();
 
 
 		},
@@ -169,9 +169,9 @@ function loadApp() {
 			$('#slider').slider('value', getViewNumber(book, page));
 
 			if (page!=1 && page!=book.turn('pages'))
-				$('.sample-docs .tabs').fadeIn(500);
+				$('.peta-book .tabs').fadeIn(500);
 			else
-				$('.sample-docs .tabs').hide();
+				$('.peta-book .tabs').hide();
 
 			book.turn('center');
 			updateTabs();
