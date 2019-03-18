@@ -35,7 +35,7 @@ body{
 }
 
 #petaBook::after {
-	content: url("/img/soundBar.png");
+	content: url("../img/soundBar.png");
 	float: right;
   margin-right: -123px;
 }
