@@ -222,8 +222,8 @@ $('#canvas').css({visibility: 'hidden'});
 
 yepnope({
 	test: Modernizr.csstransforms,
-	yep: ['js/turnjs/lib/turn.js', '../css/jquery.ui.css'],
-	nope: ['js/turnjs/lib/turn.html4.js', '../css/jquery.ui.html4.css'],
-	both: ['../css/docs.css', 'js/docs.js'],
+	yep: ['js/turnjs/lib/turn.js', 'css/jquery.ui.css'],
+	nope: ['js/turnjs/lib/turn.html4.js', 'css/jquery.ui.html4.css'],
+	both: ['css/docs.css', 'js/docs.js'],
 	complete: loadApp
 });
