@@ -203,7 +203,7 @@ function loadApp() {
 
 		}
 	}
-	}). turn('page', 2);
+	}). turn('page', 1);
 
 
 	$('#slider').slider('option', 'max', numberOfViews(flipbook));
