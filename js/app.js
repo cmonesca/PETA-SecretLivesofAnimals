@@ -214,7 +214,9 @@ function loadApp() {
 	// Show canvas
 
 	$('#canvas').css({visibility: 'visible'});
-}
+
+
+} // end of loadApp function
 
 // Hide canvas
 

@@ -34,6 +34,7 @@
 
   <div id="canvas">
   	<div id="book-zoom">
+      <div id="petaBookBg"></div>
   		<div class="peta-book" id="petaBook">
   			<!-- <div ignore="1" class="tabs"><div class="left">  </div> <div class="right"> </div></div> -->
   			<div class="hard"></div>
@@ -41,6 +42,18 @@
   			<!-- <div class="hard p29"></div>
   			<div class="hard p30"></div> -->
   		</div>
+      <div id="soundBar">
+        <img src="img/soundBar.png" usemap="#soundmap">
+
+        <map name="soundmap">
+          <area id="rabbitSound" shape="rect" coords="26,34,99,88" cursor="pointer" alt="Rabbit">
+          <area id="dolphinSound" shape="rect" coords="26,104,99,158" cursor="pointer" alt="Dolphin">
+          <area id="pigSound" shape="rect" coords="26,173,99,227" cursor="pointer" alt="Pig">
+          <area id="gooseSound" shape="rect" coords="25,240,98,294" cursor="pointer" alt="goose">
+          <area id="deerSound" shape="rect" coords="25,305,98,359" cursor="pointer" alt="Deer">
+          <area id="miceSound" shape="rect" coords="24,370,97,424" cursor="pointer" alt="Mice">
+        </map>
+      </div>
   	</div>
 
   	<div id="slider-bar" class="turnjs-slider">
@@ -58,8 +71,6 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script> -->
 
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -76,6 +87,12 @@
   <script type="text/javascript" src="js/turnjs/extras/modernizr.2.5.3.min.js"></script>
   <script type="text/javascript" src="js/turnjs/lib/hash.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
+
+
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/bookBg.js"></script>
+  <script src="js/soundBar.js"></script>
 </body>
 
 </html>
