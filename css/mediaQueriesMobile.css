@@ -1,0 +1,29 @@
+/* MEDIA QUERIES - MOBILE */
+
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+  .peta-book{
+    width: 576px !important;
+    height: 304px !important;
+  	margin: 5% auto 10% auto;
+  }
+
+  .page-wrapper {
+    width: 288px !important;
+    height: 304px !important;
+  }
+
+  .page {
+    width: 288px !important;
+    height: 304px !important;
+    background-size: cover !important;
+  }
+
+  .peta-book .p2 {
+    background-position: top right !important;
+  }
+
+} /* end */
